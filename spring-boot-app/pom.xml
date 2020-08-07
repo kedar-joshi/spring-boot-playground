@@ -19,4 +19,23 @@
 	<name>Spring Boot Application</name>
 	<description>Module for exploring Spring Boot web application</description>
 
+	<!-- Module dependencies -->
+	<dependencies>
+
+		<!-- Logging -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+
+		<!-- Spring framework -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+
+	</dependencies>
 </project>
