@@ -31,7 +31,7 @@
 	<!-- Build and plugin configuration -->
 	<build>
 		<plugins>
-			<!-- Configures Maven compiler plugin for Java -->
+			<!-- Maven compiler plugin configuration -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -41,22 +41,16 @@
 				</configuration>
 			</plugin>
 
-			<!-- Configures Maven surefire plugin for unit testing -->
+			<!-- Maven surefire plugin configuration for unit testing -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
 
-			<!-- Configures Maven failsafe plugin for integration testing -->
+			<!-- Maven failsafe plugin configuration for integration testing -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
-			</plugin>
-
-			<!-- Configures Spring Boot JAR / WAR plugin -->
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
@@ -75,10 +69,16 @@
 		<tomcat.version>8.5.57</tomcat.version>
 
 		<!-- Plugins -->
+		<maven.clean-plugin.version>3.1.0</maven.clean-plugin.version>
 		<maven.compiler-plugin.version>3.8.1</maven.compiler-plugin.version>
-		<maven.surefire-plugin.version>2.22.2</maven.surefire-plugin.version>
-		<maven.failsafe-plugin.version>2.22.2</maven.failsafe-plugin.version>
+		<maven.resource-plugin.version>3.1.0</maven.resource-plugin.version>
+		<maven.install-plugin.version>3.0.0-M1</maven.install-plugin.version>
+		<maven.deploy-plugin.version>3.0.0-M1</maven.deploy-plugin.version>
+		<maven.jar-plugin.version>3.2.0</maven.jar-plugin.version>
 		<maven.war-plugin.version>3.2.3</maven.war-plugin.version>
+		<maven.site-plugin.version>3.9.1</maven.site-plugin.version>
+		<maven.surefire-plugin.version>3.0.0-M5</maven.surefire-plugin.version>
+		<maven.failsafe-plugin.version>3.0.0-M5</maven.failsafe-plugin.version>
 
 		<!-- Spring boot overrides -->
 		<log4j2.version>${log4j.version}</log4j2.version>
