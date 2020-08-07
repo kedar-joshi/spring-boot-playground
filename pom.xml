@@ -26,6 +26,7 @@
 
 	<!-- Project modules -->
 	<modules>
+		<module>spring-boot-app</module>
 	</modules>
 
 	<!-- Build and plugin configuration -->
