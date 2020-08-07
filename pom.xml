@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Setting up Spring Boot as project parent -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.22.RELEASE</version>
+
+		<relativePath />
+	</parent>
+
+	<groupId>io.workingtheory.playground</groupId>
+	<artifactId>spring-boot-playground</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<!-- This module will be packaged as POM -->
+	<packaging>pom</packaging>
+
+	<name>Spring Boot Playground</name>
+	<description>Parent for all playground modules</description>
+
+	<!-- Project modules -->
+	<modules>
+	</modules>
+
+	<!-- Build and plugin configuration -->
+	<build>
+		<plugins>
+			<!-- Configures Maven compiler plugin for Java -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>
+
+			<!-- Configures Maven surefire plugin for unit testing -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+
+			<!-- Configures Maven failsafe plugin for integration testing -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+			</plugin>
+
+			<!-- Configures Spring Boot JAR / WAR plugin -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- Project properties -->
+	<properties>
+
+		<!-- Logging -->
+		<log4j.version>2.13.3</log4j.version>
+		<slf4j.version>1.7.30</slf4j.version>
+
+		<!-- Testing -->
+		<junit.version>4.13</junit.version>
+
+		<!-- Application servers -->
+		<tomcat.version>8.5.57</tomcat.version>
+
+		<!-- Plugins -->
+		<maven.compiler-plugin.version>3.8.1</maven.compiler-plugin.version>
+		<maven.surefire-plugin.version>2.22.2</maven.surefire-plugin.version>
+		<maven.failsafe-plugin.version>2.22.2</maven.failsafe-plugin.version>
+		<maven.war-plugin.version>3.2.3</maven.war-plugin.version>
+
+		<!-- Spring boot overrides -->
+		<log4j2.version>${log4j.version}</log4j2.version>
+
+		<!-- Spring Boot plugin overrides -->
+		<maven-compiler-plugin.version>${maven.compiler-plugin.version}</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>${maven.surefire-plugin.version}</maven-surefire-plugin.version>
+		<maven-failsafe-plugin.version>${maven.failsafe-plugin.version}</maven-failsafe-plugin.version>
+		<maven-war-plugin.version>${maven.war-plugin.version}</maven-war-plugin.version>
+
+		<!-- Compiler -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+
+	</properties>
+
+	<!-- Managed dependencies -->
+
+	<dependencyManagement>
+		<dependencies>
+
+		</dependencies>
+	</dependencyManagement>
+</project>
