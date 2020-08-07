@@ -19,6 +19,43 @@
 	<name>Spring Boot Application</name>
 	<description>Module for exploring Spring Boot web application</description>
 
+	<!-- Build and plugin configuration -->
+	<build>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+
+		<!-- Maven resources plugin configuration -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>log4j2.xml</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<includes>
+					<include>**/*.*</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<!-- Maven WAR plugin configuration -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+			</plugin>
+
+			<!-- Spring Boot plugin configuration -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
 	<!-- Module dependencies -->
 	<dependencies>
 
