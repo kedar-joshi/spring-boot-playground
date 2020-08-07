@@ -69,16 +69,10 @@
 		<tomcat.version>8.5.57</tomcat.version>
 
 		<!-- Plugins -->
-		<maven.clean-plugin.version>3.1.0</maven.clean-plugin.version>
 		<maven.compiler-plugin.version>3.8.1</maven.compiler-plugin.version>
-		<maven.resource-plugin.version>3.1.0</maven.resource-plugin.version>
-		<maven.install-plugin.version>3.0.0-M1</maven.install-plugin.version>
-		<maven.deploy-plugin.version>3.0.0-M1</maven.deploy-plugin.version>
-		<maven.jar-plugin.version>3.2.0</maven.jar-plugin.version>
-		<maven.war-plugin.version>3.2.3</maven.war-plugin.version>
-		<maven.site-plugin.version>3.9.1</maven.site-plugin.version>
 		<maven.surefire-plugin.version>3.0.0-M5</maven.surefire-plugin.version>
 		<maven.failsafe-plugin.version>3.0.0-M5</maven.failsafe-plugin.version>
+		<maven.war-plugin.version>3.3.1</maven.war-plugin.version>
 
 		<!-- Spring boot overrides -->
 		<log4j2.version>${log4j.version}</log4j2.version>
