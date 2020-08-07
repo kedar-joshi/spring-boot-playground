@@ -41,17 +41,18 @@
 
 	<Loggers>
 
-		<AsyncRoot level="INFO">
+		<Root level="INFO">
+			<AppenderRef ref="Console" />
 			<AppenderRef ref="File" />
-		</AsyncRoot>
+		</Root>
 
-		<AsyncLogger name="org.hibernate.SQL" level="TRACE" additivity="false">
+		<Logger name="org.hibernate.SQL" level="TRACE" additivity="false">
 			<AppenderRef ref="Console" />
-		</AsyncLogger>
+		</Logger>
 
-		<AsyncLogger name="org.hibernate.type.descriptor.sql" level="INFO" additivity="false">
+		<Logger name="org.hibernate.type.descriptor.sql" level="INFO" additivity="false">
 			<AppenderRef ref="Console" />
-		</AsyncLogger>
+		</Logger>
 
 	</Loggers>
 
