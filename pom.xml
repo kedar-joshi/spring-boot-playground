@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.22.RELEASE</version>
+		<version>2.3.3.RELEASE</version>
 
 		<relativePath />
 	</parent>
@@ -67,7 +67,7 @@
 		<junit.version>4.13</junit.version>
 
 		<!-- Application servers -->
-		<tomcat.version>8.5.57</tomcat.version>
+		<tomcat.version>9.0.37</tomcat.version>
 
 		<!-- Plugins -->
 		<maven.compiler-plugin.version>3.8.1</maven.compiler-plugin.version>
@@ -87,7 +87,7 @@
 		<!-- Compiler -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<java.version>1.8</java.version>
+		<java.version>15</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 
