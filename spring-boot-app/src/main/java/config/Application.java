@@ -11,7 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  * Provides start up configuration of the Spring Boot application.
  */
-@SpringBootApplication(scanBasePackages = { "config" })
+@SpringBootApplication(scanBasePackages = { "config", "io.workingtheory" })
 public class Application
 		extends SpringBootServletInitializer
 {
